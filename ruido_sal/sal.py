@@ -16,7 +16,7 @@ def sp_noise(image, prob):
                 output[i][j] = image[i][j]
     return output
 
-image = cv2.imread('Imagen1.jpg')
+image = cv2.imread('../img/Imagen1.jpg')
 noise_img = sp_noise(image,0.05)
 
 result = scipy.ndimage.minimum_filter(noise_img, size=3)  #filtro minimo
